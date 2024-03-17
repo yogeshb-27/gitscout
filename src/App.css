@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+* {
+  font-family: "Poppins";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+section{
+  padding:1.5rem 1rem;
+}
+body{
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+}
+a{
+  color: #333 ;
+  text-decoration: none;
+}
+input:focus{  outline: none; }
+
+.news{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.repo-card{
+  height: 185px;
+}
+.card-body{
+  height: 130px;
+}
+.search input{
+  outline: none;
+  border: 1px solid #555;
+  background: #f9f9f9;
+  width: 23rem;
+}
+.bio{
+  max-width: 100ch;
+}
+.meta-item{
+  display: flex;
+  align-items: center;
+  margin: .75rem 0;
+}
+@media (min-width: 992px) {
+  .sticky-lg {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+}
+
+#h1{
+  line-height: 1.5;
+}
