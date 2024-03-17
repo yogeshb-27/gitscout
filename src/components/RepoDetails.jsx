@@ -32,7 +32,7 @@ const RepoDetails = ({ repo, onBack }) => {
   };
 
   return (
-    <div className="relative pt-12 h-full pb-8">
+    <div className="relative py-20 h-full px-8 md:px-12">
       <button
         onClick={onBack}
         className="absolute top-4 right-4 hover:text-red-500"
@@ -70,7 +70,7 @@ const RepoDetails = ({ repo, onBack }) => {
         Last Updated on : {commits[0]?.commit?.committer.date.slice(0, 10)}
       </p>
       <p>{repo.description}</p>
-      <h3 className="font-semibold my-3">Commit History : </h3>
+      <h3 className="font-semibold mt-4 mb-6">Commit History : </h3>
       {loading ? (
         <p className="text-center pt-20">Loading commits...</p>
       ) : commits.length == 0 ? (
@@ -79,7 +79,7 @@ const RepoDetails = ({ repo, onBack }) => {
         <>
           <ul>
             {commits.map((commit) => (
-              <li key={commit.sha} className="mb-2 flex">
+              <li key={commit.sha} className="mb-3 flex">
                 <i className="bx bx-git-commit h-6 w-6 text-green-500 bg-zinc-200 me-2 p-1 rounded-full"></i>
                 {commit.commit.message}
               </li>

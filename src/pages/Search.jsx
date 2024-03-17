@@ -106,7 +106,7 @@ const Search = () => {
       {error && <p className="text-red-500 text-center my-4">{error}</p>}
 
       {user && (
-        <main className="flex items-start flex-col md:flex-row">
+        <main className="flex items-start flex-col sm:flex-row">
           <UserStats user={user} />
           <div className="w-full sm:w-2/3 lg:w-3/4 py-5 lg:mt-8 mb-12">
             {selectedRepo ? (
@@ -116,7 +116,7 @@ const Search = () => {
               />
             ) : !repos || (repos.length === 0 && !loading) ? (
               <p className="text-center mt-24">
-                No repositories found for this user.{" "}
+                No repositories found for this user.
               </p>
             ) : (
               <div className="w-full grid  grid-cols-1 lg:grid-cols-2 ">
