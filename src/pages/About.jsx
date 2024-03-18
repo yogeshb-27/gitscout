@@ -2,19 +2,19 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="px-8 md:px-16 lg:px-32 mt-5 container">
-      <h2 className="font-sans text-3xl text-center my-12">
+    <div className="px-8 md:px-16 lg:px-32 mt-16 pb-24 container mx-auto">
+      <h2 className="font-sans text-2xl md:text-3xl text-center my-12">
         <span className="font-sans text-red-500 ">GitScout </span>: GitHub User
         Search Website
       </h2>
-      <h3 className="text-2xl mb-4">Description:</h3>
+      <h3 className="text-xl md:text-2xl mb-4">Description:</h3>
       <p>
         GitScout is a web application designed to simplify the process of
         finding GitHub users. With a user-friendly interface, GitScout enables
         users to search for GitHub users effortlessly, providing quick access to
         their profiles, repositories, and other relevant information.
       </p>
-      <h3 className="text-2xl my-4">Technology Stack:</h3>
+      <h3 className="text-xl md:text-2xl my-4">Technology Stack:</h3>
 
       <ul>
         <li>

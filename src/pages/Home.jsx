@@ -16,11 +16,14 @@ const Home = () => {
       <div className="flex flex-col md:flex-row gap-4 lg:gap-8 ">
         <Link
           to="/search"
-          className="bg-blue-500 text-white p-2 px-5 rounded-md"
+          className="bg-blue-500 text-white p-2 px-5 rounded-md focus:outline-red-500 outline-offset-4"
         >
           Get Started
         </Link>
-        <Link to="/about" className="bg-gray-300  p-2 px-5 rounded-md">
+        <Link
+          to="/about"
+          className="bg-gray-300  p-2 px-5 rounded-md focus:outline-red-500 outline-offset-4"
+        >
           Learn More
         </Link>
       </div>

@@ -11,9 +11,12 @@ export default function Navbar() {
   return (
     <nav className="bg-slate-100">
       <div className="container mx-auto px-12">
-        <div className="flex justify-between lg:justify-start items-center py-4 ">
-          <NavLink className="text-xl text-black" to="/">
-            <i className="bx bxl-git text-red-500 mr-2"></i>
+        <div className="flex justify-between lg:justify-start items-center py-3 ">
+          <NavLink
+            className="text-xl focus:outline-red-500 outline-offset-4"
+            to="/"
+          >
+            <i className="bx bxl-git text-xl text-red-500 mr-2"></i>
             <span className="text-xl">GitScout</span>
           </NavLink>
 
@@ -25,21 +28,21 @@ export default function Navbar() {
           </button>
 
           <div className="hidden lg:flex lg:items-center lg:w-auto lg:ms-48 ">
-            <div className="lg:flex lg:flex-start lg:space-x-4">
+            <div className="lg:flex lg:flex-start lg:space-x-4 gap-14">
               <NavLink
-                className="block text-black hover:text-red-500 me-12 "
+                className="block px-2  hover:text-red-500 focus:outline-red-500 "
                 to="/"
               >
                 Home
               </NavLink>
               <NavLink
-                className="block text-black hover:text-red-500 pe-12"
+                className="block px-2  hover:text-red-500 focus:outline-red-500"
                 to="/about"
               >
                 About
               </NavLink>
               <NavLink
-                className="block text-black hover:text-red-500 "
+                className="block px-2  hover:text-red-500 focus:outline-red-500 "
                 to="/search"
               >
                 Search

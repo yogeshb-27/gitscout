@@ -7,8 +7,14 @@ export default function RepoBox({ repo, onSelectRepo }) {
 
   return (
     <article
-      className="repo-card m-6 bg-gray-200 border border-gray-300 rounded-md cursor-pointer shadow-lg relative"
+      tabIndex="0"
+      className="repo-card m-6 bg-gray-200 border border-gray-300 rounded-md cursor-pointer shadow-lg relative focus:outline-red-500 outline-offset-4"
       onClick={handleRepoClick}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          handleRepoClick();
+        }
+      }}
     >
       <div className="card-body p-3 md:px-4">
         <h3

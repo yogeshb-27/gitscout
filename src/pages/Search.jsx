@@ -90,12 +90,12 @@ const Search = () => {
 
   return (
     <div className="container mx-auto">
-      <div className="flex justify-center items-center px-2 search">
+      <div className="flex justify-center items-center px-2 search mt-8">
         <input
           type="text"
           placeholder="Search Username ..."
           value={search}
-          className="p-1 ps-4 rounded mt-8"
+          className="p-1 ps-4 rounded "
           autoCorrect="false"
           autoFocus
           onChange={(e) => setSearch(e.target.value.trim())}
@@ -108,7 +108,7 @@ const Search = () => {
       {user && (
         <main className="flex items-start flex-col sm:flex-row">
           <UserStats user={user} />
-          <div className="w-full sm:w-2/3 lg:w-3/4 py-5 lg:mt-8 mb-12">
+          <div className="w-full sm:w-2/3 lg:w-3/4 py-5 mb-12">
             {selectedRepo ? (
               <RepoDetails
                 repo={selectedRepo}
